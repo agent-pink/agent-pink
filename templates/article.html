@@ -1,0 +1,16 @@
+{{ define "head" }}
+	<title>{{ .Title }}</title>
+{{ end }}
+{{define "body" }}
+<div class="articles">
+	{{ range .Articles }}
+	<div class="article">
+		<h1 class="title"><a href="/articles/{{ .Slug }}">{{ .Title }}</a></h1>
+		<h2 class="title metadata">{{ .Author}}&mdash;{{ .Posted.UTC }}</h2>
+		<div class="contents">
+			{{ .HtmlContents }}
+		</div>
+	</div>
+	{{ end }}
+</div>
+{{ end }}
