@@ -6,7 +6,7 @@
 	{{ range .Articles }}
 	<div class="article">
 		<h1 class="title"><a href="/articles/{{ .Slug }}">{{ .Title }}</a></h1>
-		<h2 class="title metadata">{{ .Author}}&mdash;{{ .Posted }}</h2>
+		<h2 class="title metadata">{{ .Author}}&mdash;{{ .Time }}</h2>
 		<div class="contents">
 			{{ .HtmlContents }}
 		</div>
