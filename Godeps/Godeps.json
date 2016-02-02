@@ -4,7 +4,7 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/agent-pink/esso",
-			"Rev": "c2fe0c053660ce0a6748f509826871c4ecbadc72"
+			"Rev": "5bcca833e18484f8ac5f00e5711d060b519aafed"
 		},
 		{
 			"ImportPath": "github.com/gorilla/context",
