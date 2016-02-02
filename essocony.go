@@ -12,7 +12,7 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
-	http.Handle("/", esso.App)
+	http.Handle("/", esso.App())
 	fmt.Println("Listening on port:", port)
 	http.ListenAndServe(":"+port, nil)
 }
